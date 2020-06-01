@@ -1,0 +1,227 @@
+
+#home{
+
+    width: 100%;
+    min-height: 1600px;
+}
+
+.search {
+    padding: 0px;
+    width:100%;
+    height: 80px;
+    background-color: white;
+}
+.fixed_bacground{
+
+    width:100%;
+    height: 80px;
+    background-color: white;
+}
+.sbody{
+    margin-top: 10px;
+}
+.search_input{
+
+    z-index: 789;
+    position: relative;
+    width:850px;
+    height: 55px;
+    border:1px solid deepskyblue;
+}
+.typebtn{
+    margin: 0;
+    width: 70px;
+    height: 55px;
+}
+.upbtn{
+    cursor: pointer;
+    width: 70px;
+    height: 55px;
+    padding: 10px;
+    padding-top: 15px;
+}
+.downbtn{
+    padding-top: 15px;
+}
+.upbtn:hover{
+    background-color: rgba(219, 219, 219, 0.67);
+    transition: background-color 0.5s;
+}
+.downspan{
+    background-color: white;
+}
+.down,.up{
+    margin-left: 5px;
+}
+.downspan{
+    position: absolute;
+    top:54px;
+    left: 0px;
+    border: 1px solid rgba(220, 220, 220, 0.48);
+    cursor: pointer;
+    width: 70px;
+    height: 55px;
+    padding-left: 8px;
+    padding-top: 12px;
+    box-shadow:1px 1px 4px #b2b2b2;
+}
+.downspan:hover{
+    background-color: rgb(221, 221, 221);
+    transition: background-color 0.5s;
+}
+.input{
+    position: absolute;
+    top: 4px;
+    left: 70px;
+    border: 0px;
+    display: inline-block;
+    height:45px;
+    width: 450px;
+    border-left: 1px solid rgba(181, 181, 181, 0.52);
+    outline:none;
+    padding-left: 20px;
+}
+.searchbtn{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    cursor: pointer;
+    width: 80px;
+    height: 55px;
+    border: 0px;
+    background-color: rgba(0, 204, 255, 0.68);
+
+}
+.searchbtn:hover{
+    background-color: rgba(0, 204, 255, 0.47);
+    transition: background-color 0.5s;
+}
+.searchbtn img{
+    position: absolute;
+    top:7px;
+    left:22px
+}
+
+
+.search_logo{
+    position: absolute;
+    top: 4px;
+    left: -210px;
+    height: 60px;
+    width: 200px;
+
+}
+
+
+.search_fixed{
+    position: fixed;
+    top:0px;
+    z-index: 999;
+    border-bottom:2px solid #FDD000;
+}
+
+.jobnav {
+        padding-top:10px;
+        width:100%;
+        height: 420px;
+}
+.inner{
+    padding-top:15px;
+    width: 950px;
+    min-height: 1500px;
+    margin: 0 auto;
+}
+
+.jobtab {
+    width: 930px;
+    height: 390px;
+    margin-bottom: 20px;
+}
+
+.freshdiv{
+    width: 930px;
+    height: 100%;
+    overflow: hidden;
+}
+.tabframe{
+    width: 930px;
+    height:100%;
+    overflow: hidden;
+
+}
+ul li{
+    list-style: none;
+}
+.fenlei {
+    width: 900px;
+    font-size: 15px;
+    position: relative;
+    height: 20px;
+   margin-bottom: 10px;
+    padding-left: 0px;
+}
+.typeul{
+    margin-bottom: 10px;
+    width: 900px;
+}
+.typeul li{
+
+    float: left;
+}
+.fenlei span{
+    position: relative;
+    cursor: pointer;
+    padding-right: 35px;
+    color: gray;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    top: 8px;
+
+}
+.active span{
+    top:-5px;
+    font-size: 17px;
+    color: deepskyblue;
+
+}
+.advertisement{
+    margin-left: -6px;
+    padding-top: 25px;
+    width: 1000px;
+    min-height: 400px;
+}
+.advertisement ul li{
+    padding-top:5px;
+    float: left;
+}
+.bottom{
+    border-top: 1px solid gainsboro;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
+.bottominnner{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.bottominnner row{
+    padding-bottom: 30px;
+}
+.bottominnner span{
+    color: #5c5c5c;
+}
+.bottomul{
+    width: 300px   ;
+    height: 100px;
+}
+
+.bottomul li{
+    list-style: none;
+    font-size: 16px;
+    float: left;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}

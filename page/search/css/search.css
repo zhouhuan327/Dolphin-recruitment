@@ -1,0 +1,261 @@
+{
+margin:0 auto;
+padding :0 auto
+}
+.main {
+    font-size: 14px;
+    width: 100%;
+    background-color: #F6F6F8;
+    min-height: 1000px;
+}
+.location,.town{
+    font-size: 13.5px;
+}
+.top{
+    width: 100%;
+    min-height: 198px;
+    background-color: #FFFFFF;
+    box-shadow:0px 2px 5px #d3d3d3;
+}
+.inner{
+    width: 950px;
+    min-height: 198px;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.search_input{
+    z-index: 789;
+    position: relative;
+    width: 670px;
+    height: 45px;
+    border:1px solid deepskyblue;
+}
+.typebtn{
+    margin: 0;
+    width: 70px;
+    height: 45px;
+}
+.upbtn{
+    cursor: pointer;
+    width: 70px;
+    height: 45px;
+    padding: 10px;
+
+}
+.upbtn:hover{
+   background-color: rgba(219, 219, 219, 0.67);
+    transition: background-color 0.5s;
+}
+.downspan{
+    background-color: white;
+}
+.down,.up{
+    margin-left: 5px;
+}
+.downspan{
+    position: absolute;
+    top:44px;
+    left: 0px;
+    border: 1px solid rgba(220, 220, 220, 0.48);
+    cursor: pointer;
+    width: 70px;
+    height: 45px;
+    padding-left: 8px;
+    padding-top: 12px;
+    box-shadow:1px 1px 4px #b2b2b2;
+}
+.downspan:hover{
+    background-color: rgb(221, 221, 221);
+    transition: background-color 0.5s;
+}
+.input{
+    position: absolute;
+    top: 4px;
+    left: 70px;
+    border: 0px;
+    display: inline-block;
+    height:35px;
+    width: 450px;
+    border-left: 1px solid rgba(181, 181, 181, 0.52);
+    outline:none;
+    padding-left: 20px;
+}
+.searchbtn{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    cursor: pointer;
+    width: 80px;
+    height: 45px;
+    border: 0px;
+    background-color: rgba(0, 204, 255, 0.68);
+
+}
+.searchbtn:hover{
+    background-color: rgba(0, 204, 255, 0.47);
+    transition: background-color 0.5s;
+}
+.searchbtn img{
+   position: absolute;
+    top:7px;
+    left:22px
+}
+.locationall{
+    width: 980px;
+    position: relative;
+    min-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom:1px solid rgba(180, 180, 180, 0.38);
+}
+.location{
+    width: 980px;
+    position: relative;
+    min-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom:1px solid rgba(180, 180, 180, 0.38);
+}
+.jobtitleName{
+    width: 980px;
+    position: relative;
+    min-height: 50px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom:1px solid rgba(180, 180, 180, 0.38);
+}
+.town{
+    position: relative;
+    padding-top: 10px;
+    vertical-align: center;
+    min-height: 50px;
+    width: 980px;
+    border-bottom:1px solid rgba(180, 180, 180, 0.38);
+}
+.hangye{
+    position: relative;
+    padding-top: 10px;
+    vertical-align: center;
+    min-height: 50px;
+    width: 980px;
+    border-bottom:1px solid rgba(180, 180, 180, 0.38);
+}
+
+.other{
+    position: relative;
+    padding-top: 10px;
+    vertical-align: center;
+    min-height: 50px;
+    width: 980px;
+    border-bottom:1px solid rgba(180, 180, 180, 0.38);
+}
+.town ul{
+    position: absolute;
+    top:10px;
+    left: 45px;
+}
+.town ul li {
+    list-style: none;
+    float:left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.uljobtype{
+    position: absolute;
+    top:15px;
+    left: 50px;
+}
+.uljobtype li {
+    cursor: pointer;
+    list-style: none;
+    float:left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.location img{
+   vertical-align: top;
+    padding-top:2px;
+    padding-left: 5px; padding-right: 5px;
+}
+.location ul {
+    position: absolute;
+    top: 15px;
+    left: 60px;
+}
+.location ul li{
+   list-style: none;
+    float:left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.location ul li ,.town ul li{
+    cursor: pointer;
+   color: rgba(33, 0, 17, 0.83);
+}
+.location ul li:hover,.town ul li:hover,.hangye ul li:hover{
+    color: #00CCFF;
+  text-decoration: none;
+    transition: color 0.3s;
+}
+.city{
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+}.city span{
+    cursor: pointer;
+    line-height: 25px;
+ }
+.jiantou{
+    width: 20px;
+    height:18px;
+}
+
+.hangye ul{
+    font-size: 13px;
+    position: absolute;
+    top:11px;
+    left: 45px;
+}
+.hangye ul li {
+    cursor: pointer;
+    list-style: none;
+    float:left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.jobtype{
+    width: 200px;
+}
+.dropdown-toggle{
+    border: 0px;
+    width: 120px;
+}
+
+.dropdown-menu{
+    top: 30px;
+}
+/*.btn-group:hover .dropdown-menu {
+    display: block;
+    margin-top: 1px; // remove the gap so it doesn't close
+}*/
+.chooselocation{
+    width: 400px;
+    border: 0px;
+}
+.nojob{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 20px;
+}
+.clear{
+    cursor: pointer;
+    font-size: 13px;
+    color: #00CCFF;
+}
+.jobnum{
+    color: gray;
+    padding-left: 20px;
+    font-size: 13px;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/indexcss/fakeLoader.css">
+    <style>
+        body{
+            margin: 0;
+        ;
+            padding: 0;
+        ;
+            width: 939px;
+
+        }
+        .jobtab{
+            margin: 0;
+            width: 939px;
+            height: 400px;
+        }
+        .ulbox {
+            background-color: #F6F6F8;
+            border-top: 2px solid #56d5fe;
+            width: 939px;
+        }
+        .ulbox ul{
+            padding: 0;
+            margin: 0;
+
+        }
+        .ulbox ul li {
+            cursor: pointer;
+            float: left;
+            list-style: none;
+            width: 310px;
+            height: 130px;
+            background-color: white;
+            border-right: 3px solid  #F6F6F8;
+            border-bottom: 3px solid  #F6F6F8;
+
+        }
+        .ulbox ul li:hover{
+            box-shadow:0px 0px  3px 1px rgba(170, 170, 170, 0.71);
+           
+        }
+        .job-info{
+            margin: 0;
+            padding: 0;
+            display: table;
+            position: relative;
+            width: 100%;
+            height: 81px;
+        }
+        .job-info:hover .job-name{
+            color: #56d5fe;
+            transition: color 0.2s;
+
+        }
+
+        .job-name {
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0.67);
+            width: 150px;
+            position: absolute;
+            top: 15px;
+            left: 25px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .job-salary {
+            color: orange;
+            width: 80px;
+            position: absolute;
+            top: 15px;
+            left: 200px;
+        }
+        .job-text{
+            color: #909090;
+            font-size: 13px;
+            top: 33px;
+            left: 25px;
+            position: absolute;
+        }
+        .company-info{
+            position: relative;
+            display: table;
+            height: 50px;
+            width: 310px;
+        }
+        .company-info:hover{
+
+            background-color: rgba(203, 203, 203, 0.69);
+            transition: background-color 0.5s;
+        }
+        .company-img{
+            position: absolute;
+            top: 5px;
+            left: 25px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        .company-name{
+            font-size: 14px;
+            position: absolute;
+            width: 150px;
+            top: 10px;
+            left: 70px;
+        }
+    </style>
+</head>
+<body>
+<div class="jobtab">
+
+    <div class="fakeloader"></div>
+    <div class="ulbox">
+        <ul>
+            <!--<li>-->
+                <!--<div class="container-fluid job-info">-->
+                    <!--<div class="row">-->
+                        <!--<div class="job-name">JAVA高级工程师</div>-->
+                        <!--<span class="job-salary">35k-40k</span>-->
+                    <!--</div>-->
+                    <!--<div class="row">-->
+                        <!--<div class="job-text">-->
+                            <!--<p>-->
+                                <!--<span class="location">杭州</span>-->
+                                <!--<span>|</span>-->
+                                <!--<span class="experience">经验不限</span>-->
+                                <!--<span>|</span>-->
+                                <!--<span class="education">本科</span>-->
+                            <!--</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+                <!--<div class="container-fluid company-info" >-->
+                    <!--<div class="row">-->
+                        <!--<img class="company-img" src="images/ceshitouxiang.png" alt="">-->
+                        <!--<span class="company-name">阿里巴巴集团</span>-->
+                    <!--</div>-->
+
+                <!--</div>-->
+            <!--</li>-->
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/fakeLoader.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jobtabframe.js"></script>
+
+</html>

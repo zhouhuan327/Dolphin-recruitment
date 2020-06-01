@@ -1,0 +1,48 @@
+.personinfo{
+    height: 226px;
+    font-size: 13px;
+
+}
+.text-center{
+    font-size: 15px;
+}
+.headbox{
+ margin-top: 25px;
+}
+.headbox img{
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.infobox{
+    cursor: pointer;
+    font-size: 13px;
+    float: left;
+    list-style: none;
+    display: table;
+    width: 50px;
+    height: 35px;
+
+}
+.infobox p{
+    font-size: 14px;
+   margin-bottom: 3px;
+
+}
+.info1{
+    width: 53px;
+}
+.ul_personinfo li:hover p{
+    color: deepskyblue;
+    transition: color 0.3s;
+}
+.ul_personinfo li:hover span{
+    color: #009ace;
+    transition: color 0.3s;
+}
+.interstrow{
+    padding-top: 10px;
+
+}

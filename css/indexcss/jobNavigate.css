@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'microsoft yahei';
+    overflow-x: hidden;
+    background: #fff;
+    background-color: #F4F5F5;
+}
+a {
+    text-decoration: inherit;
+}
+a, li {
+    list-style: none;
+}
+.w {
+    width: 888px;
+    height: 420px;
+    margin-right: 0px;
+}
+
+.clearfix2:before, .clearfix2:after {
+    content: "";
+    display: block;
+}
+.clearfix2:after {
+    clear: both;
+}
+.clearfix2 {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+/*banner上面浮层*/
+
+.banner{
+    position: relative;
+}
+.banner .left_bar .float {
+   width: 180px;
+}
+.banner .left_bar {
+    height: 430px;
+}
+.banner .left_list div {
+    background: #fff;
+    border-left: 3px solid transparent;
+}
+.banner .left_list div li {
+    float: left;
+    color: #00000f;
+    font-size: 14px;
+    margin: 8px 0px;
+    transition: color 0.3s;
+    height: 30px;
+    width: 180px;
+    line-height: 30px;
+
+}
+
+.banner .left_list div li:hover {
+    float: left;
+    color: #00000f;
+    font-size: 14px;
+    margin: 8px 0px;
+    color: #87CEFA;
+    line-height: 30px;
+
+}
+.banner .left_list div li:first-child {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.banner .left_list {
+    cursor: pointer;
+}
+.banner .left_list div.active {
+    width: 177px;
+    padding-left: 1px;
+    position: relative;
+    z-index: 999;
+    border-left: 2px solid #FDD000;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    border-right: none;
+}
+/*banner浮层滑动显示弹框*/
+
+.cat_subcont {
+    display: none;
+}
+.cat_subcont.active {
+    display: block;
+}
+
+.cat_subcont .right_box {
+    position: absolute;
+    z-index: 998;
+    top:  0px;
+    left: 180px;
+    padding-top: 5px;
+    height: 410px;
+    width: 720px;
+    background: #fff;
+    border-left: 1px solid#E0E0E0;
+}
+.right_box{
+    border: 1px solid rgba(128, 128, 128, 0.36);
+}
+
+
+.cat_subcont .right_box .fore1 {
+    width: 740px;
+}
+.cat_subcont .right_box .fore1 .fore_list {
+    padding: 0 20px;
+}
+.cat_subcont .right_box .fore1 .fore_list h3 {
+    padding: 5px;
+    border-bottom: 1px solid #d3d3d3;
+}
+.cat_subcont .right_box .fore1 .fore_list h3 a {
+    font-size:14px;
+    color: #00a1ea;
+}
+.cat_subcont .right_box .fore1 .fore_list li {
+    float: left;
+    width: 166px;
+    height: 32px;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.cat_subcont .right_box .fore1 .fore_list li a {
+    font-size: 15px;
+    color: #333;
+}
+.cat_subcont .right_box .fore1 .fore_list li a:hover {
+    color: #00a1ea;
+    text-decoration: underline;
+}
+
+/*
+------------------------------轮播的样式-------------------
+*/
+#container{
+    position: absolute;
+    width: 700px;
+    height: 410px;
+}
+.Carousel{
+    position: absolute;
+    width: 700px;
+    height: 410px;
+    top: 0;
+    left:185px;
+}
+.pic li {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    display: none;
+}
+.pic li img {
+    width: 700px;
+    height: 410px;
+}
+#position{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    left: 5px;
+    margin: 0;
+    background: #000;
+    opacity: 0.4;
+    width: 700px;
+    text-align: center;
+}
+#position li{
+    width: 10px;
+    height: 10px;
+    margin:0 2px;
+    display: inline-block;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #afafaf;
+}
+#position .cur{
+    background-color: #ff0000;
+}
+/*
+----------------------登陆/个人中心-------------------
+*/

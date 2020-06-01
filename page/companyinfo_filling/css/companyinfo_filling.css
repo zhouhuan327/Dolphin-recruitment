@@ -1,0 +1,166 @@
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: no-repeat;
+
+    width: 100%;
+    height: 900px;
+}
+.location{
+    margin-left: 17px;
+    padding-left: 15px;
+    width: 300px;
+
+}
+.box{
+    background-color: white;
+    position: relative;
+    width: 680px;
+    height: 720px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin:0 auto;
+    margin-top: 150px;
+    padding-left: 15px;
+    padding-top: 40px   ;
+}
+.head img{
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+}
+.row input{
+    width: 330px;
+}
+.form-group{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.xingbie {
+    width: 300px;
+}
+.man{
+    width:140px ;
+    height: 30px;
+    float: left;
+    text-align: center;
+    border:1px solid #c5c5c5;
+    line-height: 30px;
+    cursor: pointer;
+}
+.woman{
+    width:140px ;
+    height: 30px;
+    float: right;
+    text-align: center;
+    border:1px solid #c5c5c5;
+    line-height: 30px;
+    cursor: pointer;
+}
+.zhuangtai{
+    width: 350px;
+
+}
+.lookingtype{
+    width: 140px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    border:1px solid #c5c5c5;
+    line-height: 30px;
+    cursor: pointer;
+    margin: 0px 25px 10px 0px;
+}
+.cur{
+    border:1px solid #5ab6d5;
+    color: #5ab6d5;
+}
+.next1{
+    width: 140px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    border:1px solid #00CAFD;
+    line-height: 30px;
+    cursor: pointer;
+    margin-left: 200px;
+
+}
+.rightpart{
+    position: absolute;
+    top: 0px;
+    left: 478.5px;
+    width: 200px;
+    height: 719px;
+    background-color: #FBFBFD;
+    -webkit-border-top-right-radius: 15px;
+    -webkit-border-bottom-right-radius: 15px;
+}
+.rightpart ul {
+    padding-left:15px;
+}
+.rightpart ul li {
+    font-size: 16px;
+    padding-top: 20px;
+    vertical-align:middle;
+    width: 140px;
+    height: 21px;
+    margin-bottom: 50px;
+    list-style: none;
+}
+.rightpart ul li img {
+    padding-right: 15px;
+}
+.ul_jiantou{
+    position:absolute;
+    top:30px;
+    left: 58px;
+}
+.secondpage,.thirdpage {
+    display: none;
+}
+#starttime{
+    margin-left: 15px;
+    width: 150px;
+}
+#endtime{
+    width: 150px;
+}
+.henggang{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.btn2{
+    margin-top: 20px;
+    margin-left: 130px;
+    display: inline-block;
+    height: 30px;
+    width: 300px;
+}
+.next2,.previous,.submit,.previous3{
+    width: 140px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    border:1px solid #00CAFD;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+.next2,.submit{
+    float:right;
+}
+.previous,.previous3{
+    float: left;
+}
+#salary1{
+    margin-left: 15px;
+}
+#salary1,#salary2{
+    width: 150px;
+}
+#youshi,#experience{
+    width: 330px;
+}

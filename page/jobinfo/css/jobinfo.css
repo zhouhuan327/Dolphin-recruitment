@@ -1,0 +1,213 @@
+{
+    margin: 0  ;
+    padding: 0 ;
+}
+body::-webkit-scrollbar {
+    display:none
+}
+.main {
+    overflow-x:hidden;
+    font-size: 14px;
+    background-color: rgba(246, 246, 248, 0);
+    position: relative;
+    min-height: 1000px;
+}
+a:hover{
+    text-decoration: none;
+}
+.time{
+    color: #787878;
+}
+.title{
+    width: 100%;
+    height: 150px;
+    background-color: #F7F9FC;
+}
+.titleinfo{
+    padding-top: 15px;
+    width: 1090px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+
+.titleinfo .time{
+    vertical-align: top;
+    font-size: 13px;
+}
+.job_info{
+    margin: 0 auto;
+    width: 1070px;
+    min-height: 500px;
+    background-color: white;
+
+}
+.jobSimpleVOs{
+
+    width: 600px;
+    min-height:300px;
+    background-color: white;
+    border: 1px solid rgba(186, 186, 186, 0.28);
+    padding: 10px;
+}
+.jobSimpleVOs ul {
+
+    width: 600px;
+    min-height:120px;
+}
+.jobSimpleVOs ul li{
+    cursor: pointer;
+    float: left;
+    list-style: none;
+    width:260px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    height: 80px;
+    padding: 15px;
+}
+.jobSimpleVOs ul li:hover{
+    background: rgba(128, 128, 128, 0.19);
+    transition: background-color 0.5s;
+}
+.jobSalary{
+    color: red;
+    float: right;
+}
+.rowmargin{
+    margin-top: 10px    ;
+}
+.jobName{
+    font-size: 15px;
+}
+.companyName{
+    color: gray;
+}
+.maininfo{
+    height: 100px;
+}
+.jobname{
+    font-size: 23px;
+}
+.bigname{
+    font-size: 20px;
+}
+.companyWebsite{
+padding-left: 20px;
+    color: #ababab;
+}
+.detail,.com-detail{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.fengefu{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.title_fixed{
+    z-index: 999;
+    position: fixed;
+    top:0px;
+    height: 110px;
+    padding-top: 0px;
+    box-shadow:0px 2px 5px #b2b2b2;
+
+}
+.left,.right{
+   min-height: 800px;
+    margin-bottom: 15px;
+}
+.right{
+    border-left: 1px solid rgba(195, 195, 195, 0.56);
+}
+.jobinfotext{
+    line-height: 35px;
+}
+h4{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.company_user{
+    padding-top: 25px;
+    height: 100px;
+}
+.head{
+    border-radius: 50%;
+    width:70px;
+    height:70px;
+}
+.zhiweifabuzhe{
+    font-size: 20px;
+}
+.com_username{
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+.companylogo{
+
+    width: 236.5px;
+    height: 57px;
+}
+.cen{
+    cursor: pointer;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+.cen:hover{
+    text-decoration-line: none;
+    transition: color 0.3s;
+    color: #00CCFF;
+}
+.companyinfo{
+    padding-left: 15px;
+}
+.top-buffer { margin-top:20px; }
+
+.jobPhone,.companyMail{
+    padding-top: 15px;
+}
+.xs{
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.similar li{
+    cursor: pointer;
+    list-style: none;
+    height: 102px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.similar li:hover .similar_jobname{
+    color: deepskyblue;
+    transition: color 0.5s;
+}
+.similar_jobname{
+    font-size: 15px;
+}
+.similar_conpanyname,.similar_jobslalary{
+    color: gray;
+}
+.moresimlilar{
+    cursor: pointer;
+    text-decoration-line: none;
+    padding-left: 60px;
+    color: gray;
+
+}
+.moresimlilar:hover{
+    text-decoration-line: none;
+}
+.nosimiliar{
+    margin-top: 15px;
+    color: gray;
+    font-size: 18px;
+}
+.bottom{
+    margin-top: 50px;
+    border-top: 1px solid gainsboro;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}

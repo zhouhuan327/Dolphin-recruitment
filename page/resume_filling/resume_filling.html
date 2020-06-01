@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/resume_filling.css">
+    <link rel="stylesheet" href="css/liandong.css">
+    <link rel="icon" href="../../images/dolphin_16px.ico" type="img/x-ico" />
+    <title>海豚招聘-完善简历</title>
+
+
+</head>
+<body>
+    <div class="box">
+        <div class="container-fluid firstpage">
+        <div class="row">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">头像</label>
+                    <div class="col-sm-10">
+                        <div class="head">
+                            <img src="images/avatar_13.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">姓名</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="请输入真实姓名">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">性别</label>
+                    <div class="col-sm-10">
+                        <div class="xingbie">
+                            <div class="man">男</div>
+                            <div class="woman">女</div>
+                            <input type="hidden" id="gender" class="genderValue" data-blank="请选择性别" value="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">年龄</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="age" placeholder="请输入年龄">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">现居地</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="location" placeholder="请选择居住地">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">工作时间</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="form-control" id="jobTime" placeholder="请选择工作时间">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">手机号码</label>
+                    <div class="col-sm-10">
+                        <input type="tel" class="form-control" id="tel" placeholder="请输入手机号码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label  class="col-sm-2 control-label">求职状态</label>
+                    <div class="col-sm-10">
+                        <div class="zhuangtai">
+                            <div class="lookingtype type1">离职-随时到岗</div>
+                            <div class="lookingtype type2">在职-暂不考虑</div>
+                            <div class="lookingtype type3">在职-考虑机会</div>
+                            <div class="lookingtype type4">在职-月内到岗</div>
+                        </div>
+                        <input type="hidden" class="seekEmployment" data-blank="请选择性别" value="0">
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <div class="next1">下一步</div>
+
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+        <div class="container-fluid secondpage">
+            <div class="row">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">学校名称</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="schoolname" placeholder="请输入学校">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">最高学历</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="degree" placeholder="请输入最高学历">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">所学专业</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="major" placeholder="例如：计算机科学技术">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">时间</label>
+                        <div class="form-inline">
+                            <input type="text" class="form-control" id="starttime" placeholder="入学时间">
+                            <span class="henggang">-</span>
+                            <input type="text" class="form-control" id="endtime" placeholder="毕业时间">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="btn2">
+                            <div class="previous">上一步</div>
+                            <div class="next2">下一步</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <div class="container-fluid thirdpage">
+            <div class="row">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">期望的工作</label>
+                        <div class="col-sm-10">
+                            <div class="dropdown">
+                                <input value="点击选择职位" type="button" class="form-control zhiwei" data-toggle="dropdown" id="willingjob" data-toggle="modal" data-target="#myModal">
+                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                    <li class="dropdown-submenu">
+                                        <a href="javascript:;" data-index="1" data-title="互联网IT">互联网IT</a>
+                                        <ul class="dropdown-menu joblist1 dropdown-menu2">
+
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">金融</a>
+                                        <ul class="dropdown-menu joblist2 dropdown-menu2">
+
+
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">房地产</a>
+                                        <ul class="dropdown-menu joblist3 dropdown-menu2">
+
+
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">建筑</a>
+                                        <ul class="dropdown-menu joblist4 dropdown-menu2">
+
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">贸易</a>
+                                        <ul class="dropdown-menu joblist5 dropdown-menu2">
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">零售</a>
+                                        <ul class="dropdown-menu joblist6 dropdown-menu2">
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">物流</a>
+                                        <ul class="dropdown-menu joblist7 dropdown-menu2">
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">教育</a>
+                                        <ul class="dropdown-menu joblist8 dropdown-menu2">
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">传媒</a>
+                                        <ul class="dropdown-menu joblist9 dropdown-menu2">
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">广告</a>
+                                        <ul class="dropdown-menu joblist10 dropdown-menu2">
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">服务业</a>
+                                        <ul class="dropdown-menu joblist11 dropdown-menu2">
+
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">市场</a>
+                                        <ul class="dropdown-menu joblist12 dropdown-menu2">
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">销售</a>
+                                        <ul class="dropdown-menu joblist13 dropdown-menu2">
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">人事</a>
+                                        <ul class="dropdown-menu joblist14 dropdown-menu2">
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">财务</a>
+                                        <ul class="dropdown-menu joblist15 dropdown-menu2">
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="2" href="javascript:;">行政</a>
+                                        <ul class="dropdown-menu joblist16 dropdown-menu2">
+
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">薪资范围</label>
+                        <div class="form-inline">
+                            <input type="text" class="form-control" id="salary1" placeholder="">
+                            <span class="henggang">-</span>
+                            <input type="text" class="form-control" id="salary2" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">期望的行业</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="willingjobtype" placeholder="您期望的行业">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">期望的工作地</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="jobplace" placeholder="工作地点">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">个人优势</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="youshi" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label  class="col-sm-2 control-label">工作经历</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="experience" rows="4" placeholder="简述工作经历,例如公司名称、职位和工作时间"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="btn2">
+                            <div class="previous3">上一步</div>
+                            <div class="submit">提交</div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="rightpart">
+            <ul class="ul_jiantou">
+                <li><img src="images/下箭头.png" alt=""></li>
+                <li><img src="images/下箭头.png" alt=""></li>
+
+
+            </ul>
+            <ul>
+                <li><img class="page1" src="images/未选-空心-圆形.png" alt="">您的基本信息</li>
+                <li><img class="page2" src="images/未选-空心-圆形.png" alt="">您的学历信息</li>
+                <li><img class="page3" src="images/未选-空心-圆形.png" alt="">您的职位期望<br><span style="padding-left: 30px">和工作经历</span></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="../../bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/resume.js"></script>
+    <script src="js/submit_data.js"></script>
+    <script src="js/dataload.js"></script>
+    <script src="../../js/jquery-cookie.js"></script>
+</body>
+</html>

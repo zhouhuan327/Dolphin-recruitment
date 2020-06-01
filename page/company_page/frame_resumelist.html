@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-size: 16px;
+            width: 900px;
+            height: 700px;
+            background-color: rgb(255, 255, 255);
+        }
+        h3{
+            padding-bottom: 10px;
+            border-bottom: 3px solid deepskyblue;
+        }
+        main{
+            padding: 20px;
+        }
+        .resumelist{
+
+        }
+        .noresume{
+            margin: 0 auto;
+           font-size: 20px;
+        }
+        .ul_resume{
+
+        }
+        .ul_resume li{
+            cursor: pointer;
+            list-style: none;
+            border-bottom: 1px solid rgba(220, 220, 220, 0.53);
+            height: 120px;
+        }
+        .ul_resume li:hover{
+            background-color: rgba(187, 187, 187, 0.36);
+            transition: background-color 0.6s;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .trueName{
+            font-size: 20px;
+        }
+        .gender{
+            padding-left: 20px;
+        }
+        .firstrow{
+            padding-top: 10px;
+        }
+        .secondrow{
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .resumeSchool,.resumeMajor{
+            float:right;
+            padding-right: 25px;
+        }
+    </style>
+<body>
+<input type="text" class="jobid" hidden>
+<main>
+    <div class="fakeloader"></div>
+    <h3>该岗位收到的简历</h3>
+    <div class="container-fluid resumelist ">
+        <ul class="ul_resume">
+            <!--<li>-->
+                <!--<div class="container-fluid">-->
+                    <!--<div class="row">-->
+                        <!--<div class="col-sm-2">-->
+                            <!--<img src="images/headpic.png" alt="">-->
+                        <!--</div>-->
+                        <!--<div class="col-sm-10">-->
+                            <!--<div class="row">-->
+                                <!--<span class="trueName"> 狗海豚</span>-->
+                                <!--<span class="gender">男</span>-->
+                                <!--<span class="resumeSchool"><span>毕业学校：</span> 浙江机电</span>-->
+                            <!--</div>-->
+                            <!--<div class="row secondrow">-->
+                                <!--<span class="age">20岁</span>-->
+                                <!--<span style="padding-left: 5px;padding-right: 5px">|</span>-->
+                                <!--<span class="degree">专科</span>-->
+                                <!--<span style="padding-left: 5px;padding-right: 5px">|</span>-->
+                                <!--<span class="jobExperience">应届生</span>-->
+                                <!--<span class="resumeMajor"><span>专业：</span> 计算机网络</span>-->
+                            <!--</div>-->
+                            <!--<div class="row">-->
+                                <!--<span class="seekEmployment">离职-随时到岗</span>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+</main>
+</body>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="js/fakeLoader.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="js/resume.js"></script>
+
+<script>
+    $(document).on("click",".ul_resume li",function () {
+        var resumeid=$(this).attr('resumeid')
+        var requestId=$(this).attr('requestId')
+       window.parent.location.href="frame_resume.html?resumeid="+resumeid+"&requestId="+requestId
+    })
+    $(function () {
+        $(".fakeloader").fakeLoader({
+            timeToHide:300,
+            bgColor:"#ffffff",
+            spinner:"spinner2"
+        });
+
+
+        $('.jobid').val(sessionStorage.getItem("jobid"))
+
+        $.ajax({
+            url : "http://47.100.243.21/recruitment/request/companyAll",
+            type : "GET",
+            datatype:"application/json",
+            contentType:"application/json;charset=utf-8",
+            xhrFields: { withCredentials: true },
+            crossDomain:true,
+            success : function(result) {
+                if (result.code == 101) {
+                    var data=result.data.list;
+                    $('.ul_resume').empty()
+                    $.each(data,function (index,item) {
+                        if(item.jobId==$('.jobid').val()) {
+                            build_resumelist(item);
+                        }
+                        // }else{
+                        //   $('.resumelist').empty();
+                        //   $('.resumelist').append(" <span class=\"noresume text-center\">暂时未收到简历</span>")
+                        // }
+                    })
+                    if($('.ul_resume li').length==0){
+                        $('.resumelist').empty();
+                        $('.resumelist').append(" <span class=\"noresume text-center\">暂时未收到简历</span>")
+                    }
+                }
+                else{
+                    alert(result.msg);
+                }
+            },
+            error : function(result) {
+                alert("失败");
+            }
+        });
+
+
+    })
+    function build_resumelist(item) {
+        $('.ul_resume').append("<li requestId='"+item.requestId+"' resumeid='"+item.resumeId+"'>\n" +
+            "                <div class=\"container-fluid\">\n" +
+            "                    <div class=\"row firstrow\">\n" +
+            "                        <div class=\"col-sm-2\">\n" +
+            "                            <img src=\"images/headpic.png\" alt=\"\">\n" +
+            "                        </div>\n" +
+            "                        <div class=\"col-sm-10\">\n" +
+            "                            <div class=\"row\">\n" +
+            "                                <span class=\"trueName\"> "+item.trueName+"</span>\n" +
+            "                                <span class=\"gender\">"+item.gender+"</span>\n" +
+            "                                <span class=\"resumeSchool\"><span>毕业学校：</span>"+item.resumeSchool+"</span>\n" +
+            "                            </div>\n" +
+            "                            <div class=\"row secondrow\">\n" +
+            "                                <span class=\"age\">"+item.age+"岁</span>\n" +
+            "                                <span style=\"padding-left: 5px;padding-right: 5px\">|</span>\n" +
+            "                                <span class=\"degree\">"+item.degree+"</span>\n" +
+            "                                <span style=\"padding-left: 5px;padding-right: 5px\">|</span>\n" +
+            "                                <span class=\"jobExperience\">"+item.jobExperience+"</span>\n" +
+            "                                <span class=\"resumeMajor\"><span>专业：</span> "+item.resumeMajor+"</span>\n" +
+            "                            </div>\n" +
+            "                            <div class=\"row\">\n" +
+            "                                <span class=\"seekEmployment\">"+item.seekEmployment+"</span>\n" +
+            "\n" +
+            "                            </div>\n" +
+            "                        </div>\n" +
+            "                    </div>\n" +
+            "                </div>\n" +
+            "            </li>")
+    }
+</script>
+</html>

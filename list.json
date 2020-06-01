@@ -1,0 +1,272 @@
+[
+  {
+    "jobName": "web前端",
+    "jobSalary": "20k-40k",
+    "companyName": "博盾习言",
+    "jobExperience": "5-10年",
+    "jobDowntown": "杭州",
+    "jobArea": "余杭区",
+    "degree": "大专"
+  },
+  {
+    "jobName": "JAVA开发工程师/专家",
+    "jobSalary": "20k-40k",
+    "companyName": "蚂蚁金服",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "Android软件开发工程师",
+    "jobSalary": "20k-40k",
+    "companyName": "华为",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "深度学习图像工程师",
+    "jobSalary": "20k-28k",
+    "companyName": "网易游戏",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "硕士"
+  },
+  {
+    "jobName": "Java高级开发工程师/技术专家",
+    "jobSalary": "25k-45k",
+    "companyName": "蚂蚁金服",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "优酷少儿-前端高级开发/专家",
+    "jobSalary": "20k-40k",
+    "companyName": "阿里巴巴文化娱乐...",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "iOS",
+    "jobSalary": "20k-40k",
+    "companyName": "阿里巴巴集团",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "余杭区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "Java工程师",
+    "jobSalary": "20k-40k",
+    "companyName": "博盾习言",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "余杭区",
+    "degree": "大专"
+  },
+  {
+    "jobName": "高级/资深Java工程师",
+    "jobSalary": "25k-50k",
+    "companyName": "博盾习言",
+    "jobExperience": "5-10年",
+    "jobDowntown": "杭州",
+    "jobArea": "余杭区",
+    "degree": "大专"
+  },
+  {
+    "jobName": "Java 开发工程师",
+    "jobSalary": "20k-40k",
+    "companyName": "有赞",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "技术风险研发工程师",
+    "jobSalary": "20k-40k",
+    "companyName": "蚂蚁金服",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "高级java开发工程师",
+    "jobSalary": "20k-30k",
+    "companyName": "蚂蚁金服",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "数据开发",
+    "jobSalary": "20k-40k",
+    "companyName": "蚂蚁金服",
+    "jobExperience": "1-3年",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "硕士"
+  },
+  {
+    "jobName": "数据开发",
+    "jobSalary": "20k-30k",
+    "companyName": "蚂蚁金服",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "算法工程师",
+    "jobSalary": "20k-30k",
+    "companyName": "蚂蚁金服",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "资深前端开发工程师",
+    "jobSalary": "20k-30k",
+    "companyName": "网易杭州",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "阿里云事业群-智能算法专家",
+    "jobSalary": "31k-45k",
+    "companyName": "阿里集团",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "余杭区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "大数据解决方案工程师",
+    "jobSalary": "20k-40k",
+    "companyName": "华为",
+    "jobExperience": "5-10年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "数据分析专家",
+    "jobSalary": "30k-40k",
+    "companyName": "蚂蚁金服",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "硕士"
+  },
+  {
+    "jobName": "Hadoop",
+    "jobSalary": "20k-40k",
+    "companyName": "华为",
+    "jobExperience": "1-3年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "机器学习/深度学习/图算法工程师",
+    "jobSalary": "25k-50k",
+    "companyName": "华为",
+    "jobExperience": "5-10年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "图形开发工程师",
+    "jobSalary": "20k-40k",
+    "companyName": "蚂蚁金服",
+    "jobExperience": "经验不限",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "学历不限"
+  },
+  {
+    "jobName": "解决方案高级工程师",
+    "jobSalary": "20k-40k",
+    "companyName": "华为",
+    "jobExperience": "5-10年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "AI算法工程师（算法优化）",
+    "jobSalary": "25k-50k",
+    "companyName": "华为",
+    "jobExperience": "5-10年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "架构师",
+    "jobSalary": "25k-50k",
+    "companyName": "华为",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "ARM开发",
+    "jobSalary": "20k-40k",
+    "companyName": "华为",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "嵌入式",
+    "jobSalary": "20k-40k",
+    "companyName": "华为",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "计算机视觉算法高级工程师、架构师",
+    "jobSalary": "20k-40k",
+    "companyName": "华为",
+    "jobExperience": "5-10年",
+    "jobDowntown": "杭州",
+    "jobArea": "滨江区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "Java技术专家",
+    "jobSalary": "25k-50k",
+    "companyName": "阿里巴巴集团",
+    "jobExperience": "3-5年",
+    "jobDowntown": "杭州",
+    "jobArea": "余杭区",
+    "degree": "本科"
+  },
+  {
+    "jobName": "Java",
+    "jobSalary": "25k-35k",
+    "companyName": "蚂蚁金服",
+    "jobExperience": "10年以上",
+    "jobDowntown": "杭州",
+    "jobArea": "西湖区",
+    "degree": "硕士"
+  }
+]

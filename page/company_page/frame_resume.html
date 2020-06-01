@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/header.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0 auto;
+            font-size: 16px;
+            width: 100%;
+            height: 700px;
+            background-color: rgb(255, 255, 255);
+        }
+</style>
+</head>
+<body>
+<input class="jobid" hidden type="text">
+<div id="header">
+    <div class="header_middle">
+        <div class="logo"><a href="../../index.html" ka="header-home-logo" title="海豚直聘"><span>海豚招聘</span></a></div>
+        <div class="nav">
+            <ul>
+                <li><a class="shouye"href="../../index.html">首页</a></li>
+                <li class=""><a  href="#" style="color: #00CCFF">求职</a></li>
+                <li class=""><a href="#">APP</a></li>
+                <li class=""><a  href="#">资讯</a></li>
+            </ul>
+        </div>
+        <div class="user-nav">
+            <a href="#" class="link-scan" title="我要招聘">我要招聘</a>
+            <a href="page/register/register.html" class="link-scan">注册</a>
+            <a href="../../page/login/login.html"class="link-scan">登录</a>
+        </div>
+        <div class="user-nav-login">
+            <a href="#" class="resume" >简历</a>
+            <div class="userhover">
+                <a class="username">周欢</a>
+                <a class="userimg"><img src="images/headpic.png" alt=""></a>
+            </div>
+            <div class="dropdown">
+                <a class="personcenter">个人中心</a>
+                <a class="setting" >帐号设置</a>
+                <a class="mycollect">我的收藏</a>
+                <a class="logout" >退出登录</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+    <div class="resumebox">
+        <div class="resumelable">
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a  href="#" data-toggle="tab">求职者简历</a></li>
+                <li class="invite" ><a  href="#" data-toggle="tab"><img style="margin-right: 5px" src="images/面试.png" alt=""><span class="invitespan">发送面试邀请</span></a></li>
+                <li class="taotai"><a  href="#" data-toggle="tab"><img style="margin-right: 5px"  src="images/淘汰.png" alt=""><span class="taotaispan">淘汰</span></a></li>
+            </ul>
+
+        </div>
+        <div class="updatetime">
+
+        </div>
+        <div id="user-info" class="resume-item" >
+            <div class="user-info-icon hovergray  ">
+                <img class="bianjiicon " src="images/编辑.png" alt="">
+                <h3 class="user-name">xxx</h3>
+                <img class="headimg" src="images/headpic.png" alt="">
+                <div class="container-fluid lables">
+                    <div class="row">
+                        <img src="images/性别.png" alt="">
+                        <span class="sex">
+                             xx</span>
+                        <span class="fengefu">|</span>
+                        <img src="images/年龄.png" alt="">
+                        <span class="age">
+                             </span>
+                        <span class="fengefu">|</span>
+                        <img src="images/经验.png" alt="">
+                        <span class="jingyan">
+                             xxx</span>
+                        <span class="fengefu">|</span>
+                        <img src="images/学历.png" alt="">
+                        <span class="education">
+                             xxx</span>
+                        <span class="fengefu">|</span>
+                        <img src="images/状态.png" alt="">
+                        <span class="zuangtai">
+                             xxx</span>
+
+                    </div>
+                </div>
+                <div class="container-fluid lables">
+                    <div class="row">
+                        <img src="images/手机.png" alt="">
+                        <span class="tel">
+                             xxx</span>
+                        <img src="images/邮箱.png" alt="">
+                        <span class="email">
+                             xxx</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="job-info" class="resume-item exceptjob-item" >
+            <h4 class="title">期望职位</h4>
+            <div class="exceptjob-icon hovergray ">
+                <img class="bianjiicon2 " src="images/编辑.png" alt="">
+                <div class="container-fluid lables">
+                    <div class="row ">
+                        <img src="images/职位.png" alt="">
+                        <span class="job-name">xx</span>
+                        <span class="fengefu">|</span>
+                        <img src="images/工资.png" alt="">
+                        <span class="job-salary">
+                             3-4k</span>
+                        <span class="fengefu">|</span>
+                        <img src="images/行业.png" alt="">
+                        <span class="hangye">
+                             互联网 IT</span>
+                        <span class="fengefu">|</span>
+                        <img src="images/地点.png" alt="">
+                        <span class="didian">杭州</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="educate-info" class="resume-item" >
+            <h4 class="title">教育经历</h4>
+            <div class="educateinfo-icon hovergray">
+                <img class="bianjiicon3 " src="images/编辑.png" alt="">
+                <div class="container-fluid lables">
+                    <div class="row pa">
+                        <img src="images/学校.png" alt="">
+                        <span class="school">
+                            学校xxx</span>
+                        <span class="time"> xxx</span>
+                    </div>
+                    <div class="row pa">
+                        <span class="major"> 计算机应用</span>
+                        <span class="fengefu">|</span>
+                        <span class="degree"> 大专</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="youshi-info" class="resume-item youshi-item" >
+            <h4 class="title">个人优势</h4>
+            <div class="youshi-icon hovergray">
+                <img class="bianjiicon4 " src="images/编辑.png" alt="">
+                <div class="container-fluid lables">
+                    <span class="gerenyoushi">
+                        RUARUARUARUARUARUARUARUA
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div id="experience-info" class="resume-item youshi-item" >
+            <h4 class="title">工作经历</h4>
+            <div class="experience-icon hovergray">
+                <img class="bianjiicon5 " src="images/编辑.png" alt="">
+                <div class="container-fluid lables">
+                    <span class="gongzuojingli">
+                        RUARUARUARUARUARUARUARUA
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="js/resume.js"></script>
+<script src="js/login_state.js"></script>
+<script src="../../js/jquery-cookie.js"></script>
+<script>
+    $(function () {
+
+            var resumeid=GetQueryString("resumeid")
+            var requestid=GetQueryString("requestId")
+
+        $.ajax({
+            url : "http://47.100.243.21/recruitment/resume/ManageInfo",
+            type : "GET",
+            datatype:"application/json",
+            contentType:"application/json;charset=utf-8",
+            xhrFields: { withCredentials: true },
+            data:{
+                "resumeId":resumeid,
+                "requestId":requestid
+            },
+            crossDomain:true,
+            success : function(result) {
+                if (result.code == 101) {
+                     var datainfo =result.data
+                    var statement=datainfo.requestState;
+                     // if(statement==3){
+                     //     $('.invitespan').text('已发送面试邀请')
+                     //     $('.invite').addClass("disabled",'true')
+                     //     $('.invite').css("pointer-events","none")
+                     // }
+                     // if(statement==4){
+                     //         $('.taotaispan').text('已被淘汰')
+                     //         $('.taotai').addClass("disabled",'true')
+                     //         $('.taotai').css("pointer-events","none")
+                     // }
+                    buildtable(datainfo)
+                }else {
+
+                }
+            },
+            error : function(result) {
+                alert("服务器故障");
+            }
+        });
+
+        addRequestStatement();
+
+    })
+    $('.invite').click(function () {
+        UpdateStatement(3)
+
+    })
+    $('.taotai').click(function () {
+        if(window.confirm('你确定淘汰这份简历吗？')){
+            UpdateStatement(4)
+
+        }else{
+            //alert("取消");
+            return false;
+        }
+
+    })
+
+
+    function UpdateStatement(state) {
+        $.ajax({
+            url : "http://47.100.243.21/recruitment/request/updateStatus",
+            type : "PUT",
+            datatype:"application/json",
+            contentType:"application/json;charset=utf-8",
+            xhrFields: { withCredentials: true },
+            crossDomain:true,
+            data:JSON.stringify({
+                "advice": "string",
+                "requestId": GetQueryString("requestId"),
+                "requestInterest": 0,
+                "requestState": state
+            }),
+            success : function(result) {
+                if (result.code == 101) {
+                    $('.invitespan').text('已发送面试邀请')
+                    $('.invite').addClass("disabled",'true')
+                    $('.invite').css("pointer-events","none")
+
+                }else {
+                    alert("操作失败")
+                }
+            },
+            error : function(result) {
+                alert("服务器故障");
+            }
+        });
+    }
+
+    function addRequestStatement() {
+        $.ajax({
+            url : "http://47.100.243.21/recruitment/scan/add",
+            type : "POST",
+            datatype:"application/json",
+            // contentType:"application/json;charset=utf-8",
+            xhrFields: { withCredentials: true },
+            crossDomain:true,
+            data:{
+                "resumeId":GetQueryString('resumeid')
+            },
+            success : function(result) {
+                if (result.code == 101) {
+                      console.log("审核信息更新成功")
+                }else {
+                    console.log("审核信息更新失败")
+                }
+            },
+            error : function(result) {
+                alert("服务器故障");
+            }
+        });
+    }
+
+    function GetQueryString(name)
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return decodeURI(r[2]); return "";
+    }
+    function buildtable(datainfo) {
+        $('.user-name').text(datainfo.trueName);
+        $('.sex').text(datainfo.gender);
+        $('.age').text(datainfo.age+"岁");
+        var date = new Date();
+        var testdata=datainfo.jobTime;
+        var exp=date.getFullYear()-testdata.substring(0,4);
+        if(exp<1){
+            $('.jingyan').text("应届生")
+        }else {
+            $('.jingyan').text(exp+"年工作经验")
+        }
+        $('.zuangtai').text(datainfo.seekEmployment);
+        $('.tel').text(datainfo.phone);
+        $('.email').text(datainfo.email);
+
+        /*-----------input中的数据*/
+        $('.input-name').val(datainfo.trueName);
+        $('.input-sex').val(datainfo.gender);
+        if($('.input-sex').val()=="男"){$('.man').addClass('cur') }
+        else($('.woman').addClass('cur'));
+        $('.input-age').val(datainfo.age);
+        $('.input-email').val(datainfo.email);
+        /*  $('.input-startime').val(datainfo.email);*/
+        $('.input-phone').val(datainfo.phone);
+        $('.job-name').text(datainfo.titleName);
+        $('.job-salary').text(datainfo.resumeSalary);
+        $('.hangye').text(datainfo.resumeIndustry);
+        $('.didian').text(datainfo.city);
+        $('.school').text(datainfo.resumeSchool);
+        $('.major').text(datainfo.resumeMajor);
+        $('.education').text(datainfo.resumeDegree);//个人信息
+        $('.time').text(datainfo.resumeEducate);
+        $('.degree').text(datainfo.resumeDegree);
+        $('.gerenyoushi').text(datainfo.advantage);
+        $('.gongzuojingli').text(datainfo.resumeProject);
+
+        $('.resumebox ').attr('requestState',datainfo.requestState)
+
+
+
+    }
+
+
+</script>
+</html>

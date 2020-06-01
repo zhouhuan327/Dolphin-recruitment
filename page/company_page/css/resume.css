@@ -1,0 +1,245 @@
+{
+    margin:  0;
+    padding: 0;
+}
+.main {
+    font-size: 14px;
+    background-color: #F6F6F8;
+    position: relative;
+    overflow-x:hidden;
+    min-height: 1100px;
+}
+.hideicon{
+    display: none;
+}
+.resumebox {
+
+    padding-top: 20px;
+    margin: 0 auto;
+    width: 800px;
+    min-height: 900px;
+    background-color: white;
+
+
+}
+.resume-item {
+    float: left;
+    width: 700px;
+    min-height: 125px;
+    border-bottom:1px  solid rgba(222, 222, 222, 0.78);
+    padding: 18px;
+}
+.user-name {
+    margin: 0 ;
+}
+.title {
+    margin: 0;
+}
+
+.user-info-icon {
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    width: 700px;
+    height: 125px;
+    padding: 10px;
+}
+.user-info-input {
+    background-color: #F8F9FB;
+    width: 700px;
+    height: 420px;
+    padding: 25px;
+}
+.exceptjob-input{
+    background-color: #F8F9FB;
+    width: 700px;
+    height: 250px;
+    padding: 25px;
+}
+.educateinfo-input{
+    background-color: #F8F9FB;
+    width: 700px;
+    height: 250px;
+    padding: 25px;
+}
+.youshi-input{
+    background-color: #F8F9FB;
+    width: 700px;
+    height: 150px;
+    padding: 25px;
+}
+
+.hovergray:hover {
+    background-color: #e5e5e7;
+    transition: background-color 0.5s;
+}
+.lables {
+    margin-top: 20px;
+}
+.bianjiicon {
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 0px;
+    left: 668px;
+    display: none;
+}
+.lables img {
+    vertical-align: middle;
+}
+.tel {
+    margin-right: 20px;
+}
+.fengefu {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.headimg {
+    position: absolute;
+    top:0px;
+    left: 598px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: right;
+    margin-top: 10px;
+
+}
+.exceptjob-item{
+    min-height: 120px;
+}
+.exceptjob-icon {
+    padding-top:1px;
+}
+.exceptjob-icon {
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    width: 700px;
+    height: 60px;
+    vertical-align: 50px;
+}
+.bianjiicon2 {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 650px;
+}
+.bianjiicon3,.bianjiicon4,.bianjiicon5 {
+     display: none;
+     position: absolute;
+     top: 0px;
+     left: 650px;
+ }
+.educateinfo-icon {
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    width: 700px;
+    height: 100px;
+}
+.pa {
+    margin-top: 20px;
+}
+.youshi-icon {
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    width: 700px;
+    height: 50px;
+}
+.youshi-item {
+    min-height: 120px;
+}
+.gerenyoushi {
+    width: 700px;
+    height: 40px;
+}
+.experience-icon {
+    position: relative;
+    background-color: white;
+    cursor: pointer;
+    min-width: 700px;
+    height: 50px;
+}
+
+.cur{
+    border:1px solid #5ab6d5;
+    color: #5ab6d5;
+}
+.xingbie {
+    width: 240px;
+}
+#starttime{
+    position: relative;
+}
+.yingjiesheng{
+    background-color: white;
+    position: absolute;
+    top: 27px;
+    left: 260px;
+    width:70px ;
+    height: 30px;
+    text-align: center;
+    border:1px solid #c5c5c5;
+    line-height: 30px;
+    cursor: pointer;
+}
+.man{
+    width:110px ;
+    height: 30px;
+    float: left;
+    text-align: center;
+    border:1px solid #c5c5c5;
+    line-height: 30px;
+    cursor: pointer;
+}
+.woman{
+    width:110px ;
+    height: 30px;
+    float: right;
+    text-align: center;
+    border:1px solid #c5c5c5;
+    line-height: 30px;
+    cursor: pointer;
+}
+.sub-cal-btn{
+    width: 230px;
+}
+.sub{
+    background-color: rgba(0, 172, 245, 0.77);
+    color: white;
+    width:110px ;
+    height: 30px;
+    float: right;
+    text-align: center;
+    border:1px solid #c5c5c5;
+    line-height: 30px;
+    cursor: pointer;
+}
+.canc{
+    color:rgba(0, 172, 245, 0.77);
+    width:110px ;
+    height: 30px;
+    float: left;
+    text-align: center;
+    border:1px solid #c5c5c5;
+    line-height: 30px;
+    cursor: pointer;
+}
+.canc:hover {
+border :2px solid rgba(0, 172, 245, 0.77);
+}
+#salary1{
+    margin-left: 15px;
+}
+#salary1,#salary2{
+    width: 105px;
+}
+#start{
+    margin-left: 15px;
+    width: 100px;
+}
+#end{
+    width: 100px;
+}

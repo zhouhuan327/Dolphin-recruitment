@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <style>
+        body {
+            width: 700px;
+            height: 700px;
+        }
+        h4 {
+            color: #00baed;
+            height: 41px;
+            border-bottom: 6px solid rgba(0, 187, 238, 0.38);
+        }
+        ul {
+            font-size: 17px;
+            padding-left: 0px;
+        }
+        .list li {
+            position: relative;
+            cursor: pointer;
+            padding-bottom:15px;
+            padding-top: 10px;
+            padding-left: 15px;
+            height: 90px;
+            width: 700px;
+            list-style: none;
+            border-bottom: 1px solid rgba(220, 220, 220, 0.24);
+            transition: background-color 0.3s;
+        }
+        ul li:hover {
+            background-color: rgba(220, 220, 220, 0.63);
+        }
+        .company{
+            font-size: 14px;
+            color: #999999;
+        }
+        .salary{
+            color:red;
+        }
+        .state,.time{
+            font-size: 15px;
+            float: right;
+            margin-right: 40px;
+        }
+        .statement{
+            display: none;
+            top:50px;
+            left: 410px;
+            position: absolute;
+            height: 30px;
+            font-size: 13px;
+        }
+        .active{
+            color: deepskyblue;
+        }
+        .pagination li{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="fakeloader">
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <h4>投递成功</h4>
+        <ul class="list">
+          <!--  <li>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div><span class="jobname">JAVA</span>
+                             <span class="state">成功投递</span>
+                        </div>
+                        <div><span class="salary">3k-5k</span></div>
+                        <div><span class="company">阿里巴巴</span>
+                            <span class="time">2018-11-21 09:23</span>
+                        </div>
+                    </div>
+                    <div class="row statement">
+                        <span>投递成功</span>
+                        <img src="images/next.png" alt="">
+                        <span>被查看</span>
+                        <img src="images/next.png" alt="">
+                        <span>等待面试</span>
+                        <img src="images/next.png" alt="">
+                        <span>等待结果</span>
+                    </div>
+                </div>
+
+            </li>-->
+        </ul>
+    </div>
+    <div class="row  text-center">
+        <ul class="pagination">
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+
+
+</body>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/fakeLoader.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        showlist(GetQueryString("pn"))
+        $(".fakeloader").fakeLoader({
+            timeToHide: 200,
+            bgColor: "#ffffff",
+            spinner: "spinner6"
+        });
+        $(document).on("mouseover","ul li",function () {
+                $(this).find('.statement').show()
+                $(this).find('.time').hide()
+                var active_state=   $(this).find('.state').text()
+                var fourstate= $(this).find('.statement').find('span')
+
+                for(var i=0;i<fourstate.length;i++){
+                   if(fourstate[i].innerHTML==active_state){
+                       fourstate.eq(i).addClass('active')
+                       break;
+                   }
+                }
+
+        })
+        $(document).on("mouseout","ul li",function () {
+            $(this).find('.statement').hide()
+            $(this).find('.time').show()
+        })
+        function choosestate(requestState) {
+            switch (requestState) {
+                case 1:
+                    return "投递成功"
+                case 2:
+                    return "被查看"
+                case 3:
+                    return "等待面试"
+                case 4:
+                    return "面试结果"
+            }
+        }
+        function showlist(pn) {
+            $.ajax({
+                url : "http://47.100.243.21/recruitment/request/all?pn="+pn,
+                type : "GET",
+                datatype:"application/json",
+                contentType:"application/json;charset=utf-8",
+                xhrFields: { withCredentials: true },
+                crossDomain:true,
+                success : function(result) {
+                    if (result.code == 101) {
+                        data=result.data.list;
+                        pages=result.data.pages
+                        buildpagination(pages)
+                        $('.jobul').empty();
+                        $.each(data,function (index,item) {
+                            $('.list').append(" <li jobid=\""+item.jobId+"\">\n" +
+                                "                <div class=\"container-fluid\">\n" +
+                                "                    <div class=\"row\">\n" +
+                                "                        <div><span class=\"jobname\">"+item.jobName+"</span>\n" +
+                                "                             <span class=\"state\">"+choosestate(item.requestState)+"</span>\n" +
+                                "                        </div>\n" +
+                                "                        <div><span class=\"salary\">"+item.jobSalary+"</span></div>\n" +
+                                "                        <div><span class=\"company\">"+item.companyName+"</span>\n" +
+                                "                            <span class=\"time\">"+item.createTime+"</span>\n" +
+                                "                        </div>\n" +
+                                "\n" +
+                                "                    </div>\n" +
+                                "\n" +
+                                "                </div>\n" +
+                                "\n" +" <div class=\"row statement\">\n" +
+                                "                        <span>投递成功</span>\n" +
+                                "                        <img src=\"images/next.png\" alt=\"\">\n" +
+                                "                        <span>被查看</span>\n" +
+                                "                        <img src=\"images/next.png\" alt=\"\">\n" +
+                                "                        <span>等待面试</span>\n" +
+                                "                        <img src=\"images/next.png\" alt=\"\">\n" +
+                                "                        <span>面试结果</span>"+
+                                "            </li>")
+                        })
+
+                    }else{
+                        alert(result.msg)
+                    }
+                },
+                error : function(result) {
+
+                }
+            });
+        }
+    })
+    function buildpagination(data) {
+        $('.pagination').empty()
+        $('.pagination').append(  " <li class=\"previous\"><a  href=\"#\">&laquo;</a></li>")
+        for(var i=1;i<=data;i++){
+            $('.pagination').append(
+                "  <li><a  pagenum='"+i+"'>"+i+"</a></li>"
+            )
+        }
+        $('.pagination').append(   "   <li class=\"next\" ><a href=\"#\">&raquo;</a></li>")
+        var pnnow=GetQueryString("pn")
+
+        $('.pagination li').eq(pnnow).addClass('active')
+        $(document).on("click",".pagination li a",function () {
+            // if($(this)[0].hasAttribute("pagenum")==true){
+            //     paging($(this).attr('pagenum'))
+            //     $('.pagination li').removeClass('active')
+            //     $(this).parent().addClass('active')
+            // }
+            if ($(this)[0].hasAttribute("pagenum") == true) {
+                $(this).addClass('active').siblings().removeClass("active");
+                var page = $(this).text()
+                window.location.href = "request_all.html?pn=" + page
+            }
+        })
+        $(document).on("click", ".next", function () {
+            pnnow = parseInt(pnnow) + 1;
+            window.location.href = "request_all.html?pn=" + pnnow
+        })
+        $(document).on("click", ".previous", function () {
+            pnnow = parseInt(pnnow) - 1;
+            window.location.href = "request_all.html?pn=" + pnnow
+        })
+        if (pages == pnnow) {
+            $('.next').addClass('disabled')
+        }
+        if (pnnow == 1) {
+            $('.previous').addClass('disabled')
+        }
+
+    }
+
+    function GetQueryString(name)
+    {
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return decodeURI(r[2]); return "";
+    }
+</script>
+</html>

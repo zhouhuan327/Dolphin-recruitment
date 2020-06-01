@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/joblist.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <link rel="stylesheet" href="css/personinfo.css">
+    <link rel="icon" href="../../images/dolphin_16px.ico" type="img/x-ico" />
+    <title>求职、找工作</title>
+
+
+</head>
+<body>
+
+<div class="main">
+    <div id="header">
+        <div class="header_middle">
+            <div class="logo"><a href="../../index.html" ka="header-home-logo" title="海豚直聘"><span>海豚招聘</span></a></div>
+            <div class="nav">
+                <ul>
+                    <li><a class="shouye"href="../../index.html">首页</a></li>
+                    <li class=""><a  href="#" style="color: #00CCFF">求职</a></li>
+                    <li class=""><a href="#">APP</a></li>
+                    <li class=""><a  href="https://zq.zhaopin.com/?utm_source=%E9%A6%96%E9%A1%B5&utm_medium=button&utm_campaign=&utm_term=&utm_content=" target="_blank">资讯</a></li>
+                </ul>
+            </div>
+            <div class="user-nav">
+                <a href="../register/register.html?type=2" class="link-scan" title="我要招聘">我要招聘</a>
+                <a href="../register/register.html" class="link-scan">注册</a>
+                <a href="../../page/login/login.html"class="link-scan">登录</a>
+            </div>
+            <div class="user-nav-login">
+                <a class="resume" style="cursor: pointer;" >简历</a>
+                <div class="userhover">
+                    <a class="username">周欢</a>
+                    <a class="userimg"><img src="images/headpic.png" alt=""></a>
+                </div>
+                <div class="dropdown">
+                    <a class="personcenter" >个人中心</a>
+                    <a class="setting" >帐号设置</a>
+                    <a class="mycollect">我的收藏</a>
+                    <a class="logout" >退出登录</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="top">
+        <div class="inner">
+            <div class="search_input">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="typebtn">
+                            <div class="upbtn">
+                                <span class="upspan">职位</span>
+                                <img class="down" src="images/down.png" style="width: 15%;height: 15%;" alt="">
+                                <img hidden class="up" src="images/up.png" style="width: 15%;height: 15%;" alt="">
+                            </div>
+                            <div hidden class="downbtn">
+                                <span class="downspan">公司</span>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="input query_input" type="text" placeholder="搜索职位">
+                </div>
+                <div class="searchbtn">
+                    <img src="images/searchbtn.png" alt="">
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                    <div class="row  locationall" >
+                        <span style="font-weight: bold">城市:</span>
+                        <button type="button" class="btn btn-default chooselocation" data-toggle="dropdown"  zhuangtai="hide">请选择地区
+                            <span class="caret"></span>
+                        </button>
+                    </div>
+                    <div hidden class=" slide">
+
+                        <div  class="row location">
+
+                        <span >热门城市：</span>
+
+                        <ul class="ulcity">
+                            <li style="color: #00CAFD">不限</li>
+                            <li>北京</li>
+                            <li>上海</li>
+                            <li>广州</li>
+                            <li>深圳</li>
+                            <li>杭州</li>
+                            <li>天津</li>
+                            <li>西安</li>
+                            <li>苏州</li>
+                            <li>武汉</li>
+                            <li>西安</li>
+                            <li>苏州</li>
+                            <li>武汉</li>
+                            <li>厦门</li>
+                            <li>长沙</li>
+                            <li>成都</li>
+
+                        </ul>
+                        <span style="float: right" >全部城市</span>
+                    </div>
+
+                        <div  class="row town">
+                         <span class="nolimite" style="color: #00CAFD;cursor: pointer">不限</span>
+                         <ul class="townul">
+
+                         </ul>
+                        </div>
+
+                    </div>
+
+                <div class="row hangye">
+                    <span style="font-weight: bold">行业：</span>
+                    <ul class="ulhangye" zhuangtai="hide">
+                        <li>互联网IT</li>
+                        <li>金融</li>
+                        <li>房地产</li>
+                        <li>建筑</li>
+                        <li>贸易</li>
+                        <li>零售</li>
+                        <li>物流</li>
+                        <li>教育</li><li>传媒</li><li>广告</li><li>服务业</li>
+                        <li>市场</li><li>销售</li><li>人事</li><li>财务</li><li>行政</li>
+                    </ul>
+                </div>
+                <div hidden class="slide2">
+                    <div  class="row jobtitleName">
+                        <span class="jobtype_value" style="color: #00CAFD" jobid="">职位</span>
+                        <ul class="uljobtype">
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row other">
+                    <span style="font-weight: bold" >其他:</span>
+                    <!--<div class="mydrop">
+                      <span>薪资范围</span>
+                        <ul  class="dropul">
+                            <li><a href="#">功能</a></li>
+                            <li><a href="#">功能</a></li>
+                            <li><a href="#">功能</a></li>
+                        </ul>
+                    </div>-->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle salary" data-toggle="dropdown">薪资范围
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu salarymenu" role="menu">
+                            <li>
+                                <a href="#">不限</a>
+                            </li>
+                            <li>
+                                <a href="#">1k-3k</a>
+                            </li>
+                            <li>
+                                <a href="#">3k-5k</a>
+                            </li>
+                            <li>
+                                <a href="#">5k-10k</a>
+                            </li>
+                            <li>
+                                <a href="#">10k-15k</a>
+                            </li>
+                            <li>
+                                <a href="#">15k-20k</a>
+                            </li>
+                            <li>
+                                <a href="#">20k-25k</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle degree" data-toggle="dropdown">学历要求
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu degreemenu" role="menu">
+                            <li>
+                                <a href="#">不限</a>
+                            </li>
+                            <li>
+                                <a href="#">高中</a>
+                            </li>
+                            <li>
+                                <a href="#">大专</a>
+                            </li>
+                            <li>
+                                <a href="#">本科</a>
+                            </li>
+                            <li>
+                                <a href="#">研究生</a>
+                            </li>
+                            <li>
+                                <a href="#">博士</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle ctype" data-toggle="dropdown">公司类型
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu ctypemenu" role="menu">
+                            <li>
+                                <a href="#">不限</a>
+                            </li>
+                            <li>
+                                <a href="#">合资</a>
+                            </li>
+                            <li>
+                                <a href="#">独资</a>
+                            </li>
+                            <li>
+                                <a href="#">国有</a>
+                            </li>
+                            <li>
+                                <a href="#">私有</a>
+                            </li>
+                            <li>
+                                <a href="#">集体所有制集体所有制</a>
+                            </li>
+                            <li>
+                                <a href="#">股份制</a>
+                            </li>
+                            <li>
+                                <a href="#">有限责任</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <span class="clear">清空筛选条件</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="jobList">
+        <div class="fakeloader"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8 left">
+                    <ul class="ul_jobinfo">
+                        <!--<li>-->
+                            <!--<div class="container-fluid">-->
+                                <!--<div class="row">-->
+                                    <!--<span class="jobname">JAVA工程师xxxxx</span>-->
+                                    <!--<span class="jobslalry">3k-4k</span>-->
+                                    <!--<span class="companyname">阿里巴巴</span>-->
+                                <!--</div>-->
+                                <!--<div class="row secondrow">-->
+                                    <!--<span class="joblocation">杭州滨江</span> <span class="fengefu">|</span>-->
+                                    <!--<span class="experience">经验不限</span>  <span class="fengefu">|</span>-->
+                                    <!--<span class="degree">大专</span>-->
+
+                                    <!--<span class="ctype"> <span class="fengefu">|</span>1000人</span>-->
+                                    <!--<span class="ctype"><span class="fengefu">|</span>已上市 </span>-->
+                                    <!--<span class="ctype"> 游戏</span>-->
+
+                                <!--</div>-->
+                                <!--<div class="row thirdrow">-->
+
+                                    <!--<span class="">亮点1-亮点2-亮点3balabala</span>-->
+                                    <!--<span class="createtime">2018-11-15</span>-->
+                                <!--</div>-->
+
+                            <!--</div>-->
+
+                        <!--</li>-->
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <!-- 模态框（Modal） -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <h4 class="modal-title" id="myModalLabel">职位申请</h4>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="container-fluid">
+                                      <div class="row">
+                                          请选择简历：
+                                      </div>
+                                      <div class="row resumeselect">
+                                          <select>
+
+                                          </select>
+                                      </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                    <button type="button" class="btn btn-primary">确定</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal -->
+                    </div>
+
+                    <div class="container-fluid conpage">
+                        <div class="row ">
+                            <ul class="pagination">
+
+                            </ul>
+                    </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3 right">
+                    <div hidden class="container-fluid personinfo">
+                        <div class="topinfo">
+                        <div class="row headbox">
+                            <img class="center-block" src="images/headpic.png" alt="">
+                        </div>
+                        <div class="row text-center">
+                            <span class="personinfo_name">周欢</span>
+                        </div>
+                        <div class="row text-center">
+                            <span class="personinfo_age">20岁</span>
+                            <span>|</span>
+
+                            <span class="seekEmployment">xx</span>
+                        </div>
+                        </div>
+                        <div class="row text-center ">
+                            <ul class="ul_personinfo">
+                                <li class="infobox info1"><p class="scan">0</p>
+                                    <span>谁看过我</span></li>
+                                <li class="infobox info2" ><p class="deliver">0</p>
+                                    <span>已投递</span></li>
+                                <li class="infobox info3"><p class="interview">0</p>
+                                    <span>面试</span></li>
+                                <li class="infobox info4"><p class="collect"> 0</p>
+                                    <span>收藏</span></li>
+                            </ul>
+                        </div>
+                        <div class="row text-center interstrow">
+                            <!--<span class="interst">对我感兴趣</span>-->
+                        </div>
+                    </div>
+                    <div class="container-fluid visit">
+                        <div class="row">
+                            <div class="text-center">浏览记录</div>
+                        </div>
+                        <ul class="ul_visitinfo">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        咕咕咕咕
+    </div>
+
+
+</div>
+</body>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="js/login_state.js"></script>
+<script src="js/jquery-cookie.js"></script>
+<script src="js/loading_location.js"></script>
+<script src="js/search.js"></script>
+<script src="js/loading_joblist.js"></script>
+<script src="js/fakeLoader.js"></script>
+
+
+
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fakeLoader.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h4{
+            color: #00baed;
+            height: 41px ;
+            border-bottom: 6px solid rgba(0, 187, 238, 0.38);
+        }
+    </style>
+</head>
+<body>
+<div class="fakeloader"></div>
+<div class="container-fluid">
+    <h4>修改密码</h4>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="oldpw" class="col-sm-2 control-label">请输入旧密码</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="oldpw" placeholder="旧密码">
+            </div></div></form>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="newpw" class="col-sm-2 control-label">请输入新密码</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="newpw" placeholder="">
+            </div></div></form>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="newpw2" class="col-sm-2 control-label">再次输入</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="newpw2" placeholder="">
+            </div></div></form>
+    <div class="form-horizontal">
+        <button type="submit" class="btn update">确认修改</button>
+    </div>
+
+
+</div>
+</body>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/fakeLoader.min.js"></script>
+<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".fakeloader").fakeLoader({
+            timeToHide:100,
+            bgColor:"#ffffff",
+            spinner:"spinner7"
+        });
+
+        $('.update').click(function () {
+            if($('#oldpw').val()==""){
+                alert("新密码不能为空")
+            }else if ($('#newpw').val()==""){
+                alert("新密码不能为空")
+            }else if($('#newpw').val()!=$('#newpw2').val()){
+                alert("密码不一致")
+            }
+            $.ajax({
+                url: "http://47.100.243.21/recruitment/user/update",
+                type: "GET",
+                datatype: "application/json",
+                contentType: "application/json;charset=utf-8",
+                xhrFields: {withCredentials: true},
+                crossDomain: true,
+                data :JSON.stringify({
+                    "oldpassword":$('#oldpw').val(),
+                    "newpassword":$('#newpw').val(),
+
+                }),
+                success: function (result) {
+                    if (result.code == 101) {
+                            alert("修改成功")
+                    } else {
+                        alert(result.msg)
+                    }
+                },
+                error: function (result) {
+
+                }
+            });
+
+        })
+    })
+</script>
+</html>

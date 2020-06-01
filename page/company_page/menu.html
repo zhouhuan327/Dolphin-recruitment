@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>海豚招聘企业版</title>
+
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" href="css/system.css">
+    <link rel="icon" href="../../images/dolphin_16px.ico" type="img/x-ico" />
+
+
+    <style>
+      .page-content{
+          height: 100%;
+          overflow: hidden;
+      }
+        .solar-syst{
+            z-index: -5;
+            margin-top: 200px    ;
+            margin-left: 500px   ;
+        }
+        .frame{
+            clear: both;
+            z-index: 999;
+            position: absolute;
+            top: 50px;
+            width: 1000px;
+            height: 700px;
+            overflow: hidden
+        }
+        .frame iframe{
+            clear: both;
+            z-index: 999;
+            width:1000px;
+            height: 700px;
+            overflow: hidden
+        }
+        .back{
+            float: right;
+            cursor: pointer;
+            font-size: 13px;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrapper toggled">
+    <nav id="sidebar" class="sidebar-wrapper">
+        <div class="sidebar-content">
+            <a href="#" id="toggle-sidebar"><i class="fa fa-bars"></i></a>
+            <div class="sidebar-brand">
+                <a href="#">海豚招聘企业版</a>
+                <span class="back">返回主页</span>
+            </div>
+            <div class="sidebar-header">
+
+                <div class="user-info">
+                    <span class="user-name"></span>
+                    <span class="user-role">公司管理员</span>
+                    <div class="user-status">
+                        <a href="#"><span class="label label-success">Online</span></a>
+                    </div>
+                </div>
+            </div><!-- sidebar-header  -->
+            <div class="sidebar-search">
+                <div>
+                    <div class="input-group">
+                        <input type="text" class="form-control search-menu" placeholder="Search for...">
+                        <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div><!-- sidebar-search  -->
+            <div class="sidebar-menu">
+                <ul>
+                    <li class="header-menu"><span>公司管理</span></li>
+                    <li class="sidebar-dropdown">
+                        <a  href="#" ><i class="fa fa-tv"></i><span>公司信息管理</span><span class="label label-danger">New</span></a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li class="btn_companyinfo"><a href="#">公司信息<span class="label label-success">10</span></a> </li>
+                                <li><a href="#">submenu 2</a></li>
+                                <li><a href="#">submenu 3</a></li>
+                                <li><a href="#">submenu 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#"><i class="fa fa-photo"></i><span>招聘信息管理</span><span class="badge">3</span></a>
+                        <div class="sidebar-submenu">
+                            <ul>
+                                <li class="btn_joblist"><a href="#">查看招聘信息<span class="badge">2</span></a></li>
+                                <li class="btn_addjob"><a href="#">发布招聘信息</a></li>
+                                <li><a href="#">submenu 3</a></li>
+                                <li><a href="#">submenu 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidebar-dropdown">
+                        <a href="#"><i class="fa fa-bar-chart-o"></i><span>简历中心</span></a>
+                        <div class="sidebar-submenu siderbar_resume">
+                            <ul class="resumecenter">
+                                <li><a href="#">submenu 1</a></li>
+                                <li><a href="#">submenu 2</a></li>
+                                <li><a href="#">submenu 3</a></li>
+                                <li><a href="#">submenu 4</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div><!-- sidebar-menu  -->
+        </div><!-- sidebar-content  -->
+
+        <div class="sidebar-footer">
+            <a href="#"><i class="fa fa-bell"></i><span class="label label-warning notification">3</span></a>
+            <a href="#"><i class="fa fa-envelope"></i><span class="label label-success notification">7</span></a>
+            <a href="#"><i class="fa fa-gear"></i></a>
+            <a href="#"><i class="fa fa-power-off"></i></a>
+        </div>
+    </nav><!-- sidebar-wrapper  -->
+
+
+    <main class="page-content">
+        <!--<div class="container-fluid">-->
+            <!--<header class="header">-->
+                <!--<table id="manage-table" class="table table-striped">-->
+                    <!--<tr class="info">-->
+                        <!--<td>职位名称</td>-->
+                        <!--<td>公司名称</td>-->
+                        <!--<td>企业类型</td>-->
+                        <!--<td>工作地址</td>-->
+                        <!--<td>月薪</td>-->
+                        <!--<td>行业</td>-->
+                        <!--<td>工作地区</td>-->
+                        <!--<td>审核情况</td>-->
+                        <!--<td>职位发布时间</td>-->
+                    <!--</tr>-->
+                <!--</table>-->
+            <!--</header>-->
+        <!--</div>-->
+        <div class="frame">
+            <iframe class="" src="frame_joblist.html" frameborder="0"></iframe>
+        </div>
+        <div class='solar-syst'>
+            <div class='sun'></div>
+            <div class='mercury'></div>
+            <div class='venus'></div>
+            <div class='earth'></div>
+            <div class='mars'></div>
+            <div class='jupiter'></div>
+            <div class='saturn'></div>
+            <div class='uranus'></div>
+            <div class='neptune'></div>
+            <div class='pluto'></div>
+            <div class='asteroids-belt'></div>
+        </div>
+        <!--<iframe class="indexframe" src="system.html" frameborder="0"></iframe>-->
+    </main><!-- page-content" -->
+</div><!-- page-wrapper -->
+
+
+<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/jquery-cookie.js"></script>
+<script src="js/company_loginstate.js"></script>
+
+
+</body>
+
+</html>
